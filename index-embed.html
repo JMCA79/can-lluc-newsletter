@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin:5%;
         }
+
+        .work-sans {
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: "Work Sans", sans-serif;
+            font-size: 1.5em;
+            padding:1%;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
         .divcenter_desktop {
-            width:500px;
-            height:600px;
+            width:1200px;
+            height:768px;
             padding:1%;
             text-align: center;
             border: 4px solid grey;
@@ -39,19 +62,37 @@
         }
 
         .desktop {
-            width: 500px;
-            height: 600px;
+            width:1200px;
+            height:768px;
+        }
+
+        .tablet {
+            width:500px;
+            height:600px;
         }
 
         .smartphone {
-            width: 375px;
-            height: 612px;
+            width:375px;
+            height:612px;
         }
 
     </style>
 <body>
-<div class="divcenter_tablet" >
-<embed class="desktop" type="text/html" src="index.html">
-</div>
+    <h1>DESKTOP</h1>
+    <div class="divcenter_desktop" >
+        <embed class="desktop" type="text/html" src="index.html">
+    </div>
+
+    <h1>TABLET</h1>
+    <div class="divcenter_tablet" >
+        <embed class="tablet" type="text/html" src="index.html">
+    </div>
+
+    <h1>SMARTPHONE</h1>
+    <div class="divcenter_smartphone" >
+        <embed class="smartphone" type="text/html" src="index.html">
+    </div>
+
+
 </body>
 </html>
